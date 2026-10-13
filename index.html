@@ -24,7 +24,43 @@ li{margin-bottom:.4rem}
 .prix{font-size:1.8rem;font-weight:900;color:#d4af37;margin:.8rem 0}
 footer{text-align:center;padding:3rem 1rem;border-top:1px solid #26263a;margin-top:3rem;font-size:.85rem;color:#8a8a9a}
 footer a{color:#d4af37;text-decoration:none;margin:0 .5rem}
-.faq-item{background:#14141e;border-left:3px solid #4a7bc8;padding:1rem;border-radius:0 8px 8px 0;margin-bottom:.8rem}
+/* ═══ SECTION ÉTAPES ═══ */
+.etapes { display: grid; gap: 1rem; margin: 1.5rem 0; }
+.etape { display: flex; gap: 1.2rem; align-items: flex-start; background: #14141e; border: 1px solid #26263a; border-radius: 12px; padding: 1.2rem; }
+.etape-num { width: 3rem; height: 3rem; flex-shrink: 0; background: linear-gradient(135deg, #d4af37, #f4d97a); color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 900; }
+.etape-content h3 { color: #f4f4f8; margin-top: 0; font-size: 1.1rem; margin-bottom: 0.3rem; }
+.etape-content p { color: #8a8a9a; margin: 0; font-size: 0.9rem; }
+
+/* ═══ SECTION POUR QUI ═══ */
+.pour-qui { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.cible { background: #14141e; border: 1px solid #26263a; border-radius: 12px; padding: 1.2rem; text-align: center; transition: transform 0.15s; }
+.cible:hover { transform: translateY(-3px); border-color: #d4af37; }
+.cible-icon { font-size: 2.2rem; margin-bottom: 0.5rem; }
+.cible h3 { color: #d4af37; margin-top: 0; font-size: 1rem; margin-bottom: 0.5rem; }
+.cible p { color: #8a8a9a; font-size: 0.85rem; margin: 0; }
+
+/* ═══ SECTION HISTOIRE ═══ */
+.histoire { background: linear-gradient(135deg, rgba(212,175,55,0.08), rgba(212,175,55,0.02)); border-left: 4px solid #d4af37; border-radius: 0 12px 12px 0; padding: 1.5rem; margin: 1.5rem 0; }
+.histoire p { color: #c4c4cc; line-height: 1.7; margin-bottom: 1rem; }
+.histoire-quote { font-style: italic; color: #d4af37; font-size: 1.05rem; text-align: center; padding: 1rem 0 0 0; border-top: 1px solid rgba(212,175,55,0.3); margin-top: 1rem; }
+
+/* ═══ SECTION GARANTIES ═══ */
+.garanties { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.garantie { background: #14141e; border: 1px solid #26263a; border-radius: 12px; padding: 1.2rem; text-align: center; }
+.garantie-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+.garantie h3 { color: #10b981; margin-top: 0; font-size: 0.95rem; margin-bottom: 0.4rem; }
+.garantie p { color: #8a8a9a; font-size: 0.82rem; margin: 0; }
+
+/* ═══ SECTION WHATSAPP ═══ */
+.whatsapp-btn { display: inline-flex; align-items: center; gap: 0.6rem; background: #25D366; color: #fff !important; padding: 0.9rem 1.5rem; border-radius: 50px; text-decoration: none !important; font-weight: 700; margin: 1rem 0.5rem; font-size: 0.95rem; transition: transform 0.15s; }
+.whatsapp-btn:hover { transform: scale(1.03); }
+
+@media (max-width: 600px) {
+  .etape { flex-direction: column; gap: 0.8rem; }
+  .etape-num { width: 2.5rem; height: 2.5rem; font-size: 1.2rem; }
+}
+
+  .faq-item{background:#14141e;border-left:3px solid #4a7bc8;padding:1rem;border-radius:0 8px 8px 0;margin-bottom:.8rem}
 </style>
 </head>
 <body>
@@ -53,7 +89,91 @@ footer a{color:#d4af37;text-decoration:none;margin:0 .5rem}
 <li>✅ Support par email</li>
 </ul>
 
-<h2 id="offres">💰 Nos offres</h2>
+<h2>🎯 Comment ça marche ?</h2>
+<div class="etapes">
+  <div class="etape">
+    <div class="etape-num">1</div>
+    <div class="etape-content">
+      <h3>Achetez votre licence</h3>
+      <p>Choisissez votre formule (1 an ou à vie). Vous recevez immédiatement par email le fichier de l'application et votre clé de licence personnelle.</p>
+    </div>
+  </div>
+  <div class="etape">
+    <div class="etape-num">2</div>
+    <div class="etape-content">
+      <h3>Installez en 2 minutes</h3>
+      <p>Enregistrez le fichier sur votre ordinateur, double-cliquez dessus, collez votre clé de licence. C'est prêt. Aucune installation complexe.</p>
+    </div>
+  </div>
+  <div class="etape">
+    <div class="etape-num">3</div>
+    <div class="etape-content">
+      <h3>Utilisez tous les jours</h3>
+      <p>Créez vos sociétés, discutez avec 62 experts IA, générez des images et vidéos. Tout reste privé sur votre appareil.</p>
+    </div>
+  </div>
+</div>
+
+<h2>👥 Pour qui est IVA-MNA-PRO ?</h2>
+<div class="pour-qui">
+  <div class="cible">
+    <div class="cible-icon">🏢</div>
+    <h3>Entrepreneurs & PME</h3>
+    <p>Gérez vos sociétés, préparez vos déclarations, consultez les experts administratifs (comptable, fiscaliste, CAFAT...).</p>
+  </div>
+  <div class="cible">
+    <div class="cible-icon">🌾</div>
+    <h3>Agriculteurs & Éleveurs</h3>
+    <p>Experts avicoles, hydroponie, cultures tropicales. Conseils techniques et calculs de rentabilité.</p>
+  </div>
+  <div class="cible">
+    <div class="cible-icon">💼</div>
+    <h3>Professions libérales</h3>
+    <p>Avocats, comptables, médecins... Consultez des experts dans votre domaine, préparez vos dossiers plus vite.</p>
+  </div>
+  <div class="cible">
+    <div class="cible-icon">👨‍👩‍👧</div>
+    <h3>Particuliers curieux</h3>
+    <p>Discutez avec une IA avancée, générez des images, explorez des idées. Un assistant personnel à portée de main.</p>
+  </div>
+</div>
+
+<h2>💡 Notre histoire</h2>
+<div class="histoire">
+  <p><strong>IVA-MNA-PRO</strong> est né d'un besoin réel : celui de gérer plusieurs sociétés en parallèle, sans avoir besoin d'une équipe de conseillers à plein temps.</p>
+  <p>Conçu par <strong>M. MUNANOA Gregory Ivanoe</strong>, Président du GIE Alliance pour l'économie circulaire de GURESHABA à Maré (Nouvelle-Calédonie), cet outil a d'abord été développé pour ses 5 propres sociétés.</p>
+  <p>Aujourd'hui, nous le rendons accessible à tous ceux qui veulent un assistant IA puissant, privé, et adapté à la réalité calédonienne.</p>
+  <div class="histoire-quote">
+    « Ce que j'ai construit pour moi, je le partage avec vous. »<br>
+    <span style="font-size:0.85rem; color:#8a8a9a;">— M. MUNANOA Gregory Ivanoe</span>
+  </div>
+</div>
+
+<h2>🛡️ Nos garanties</h2>
+<div class="garanties">
+  <div class="garantie">
+    <div class="garantie-icon">🔐</div>
+    <h3>100% Privé</h3>
+    <p>Vos données restent sur votre appareil. Aucun envoi vers nos serveurs.</p>
+  </div>
+  <div class="garantie">
+    <div class="garantie-icon">💾</div>
+    <h3>Fonctionne hors-ligne</h3>
+    <p>Pas besoin d'internet en permanence. L'app fonctionne même sans connexion.</p>
+  </div>
+  <div class="garantie">
+    <div class="garantie-icon">🔄</div>
+    <h3>Mises à jour incluses</h3>
+    <p>Toutes les évolutions futures sont gratuites pendant la durée de votre licence.</p>
+  </div>
+  <div class="garantie">
+    <div class="garantie-icon">📧</div>
+    <h3>Support par email</h3>
+    <p>Une question ? Nous répondons sous 24-48h à mitsrael@proton.me</p>
+  </div>
+</div>
+
+  <h2 id="offres">💰 Nos offres</h2>
 <div class="offre">
 <h3>Licence 1 an</h3>
 <p class="prix">[Prix] XPF</p>
